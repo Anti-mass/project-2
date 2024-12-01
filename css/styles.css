@@ -115,6 +115,19 @@ body {
     background-attachment: fixed;
 }
 
+.home-link {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    background-color: #ce93d8;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
 .account-link {
     position: absolute;
     top: 10px;
@@ -142,12 +155,20 @@ body {
 }
 
 .post-button.logged-in {
-    background-color: #0073e6; /* Logged-in color */
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    background-color: green; /* Logged-in color */
+    transition: background-color 0.3s;
     cursor: pointer;
 }
 
 .post-button.logged-in:hover {
-    background-color: #005bb5; /* Hover color for logged-in users */
+    background-color: lightgreen; /* Hover color for logged-in users */
 }
 
 .header {
